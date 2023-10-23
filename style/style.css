@@ -1,0 +1,127 @@
+@import url(typography.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    padding: 0 200px;
+}
+
+body{
+    direction: rtl;
+    font-family: Iran-sans-medium;
+}
+
+.hero{
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 130px;
+    padding: 0 100px;
+    align-items: center;
+}
+
+nav .menu{
+    width: 100%;
+    margin-right: 5%;
+}
+
+nav .menu ul{
+    min-width: 70%;
+    justify-content: space-between;
+}
+
+nav .menu ul li a{
+    color: #111;
+    font-family: Iran-sans-regular;
+}
+
+header .hero .wrapper{
+    width: 100%;
+    height: 480px;
+    background-color: #21aa58;
+}
+header .hero .wrapper .right-part{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header .hero .wrapper .right-part h1{
+    width: 95%;
+    font-size: 36px;
+    color: #fff;
+    text-align: justify;
+}
+
+header .hero .wrapper .right-part p{
+    color: #fff;
+    width: 90%;
+}
+
+
+header .hero .wrapper .right-part .row form input[type=number]{
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    align-items: center;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+header .hero .wrapper .right-part .row form input[type=number]:focus{
+    outline: none;
+}
+
+header .hero .wrapper .right-part .row form input[type=submit]{
+    width: 125px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #21aa58;
+    font-family: Iran-sans-demi-bold;
+}
+
+header .hero .wrapper .right-part .row a{
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: Iran-sans-demi-bold;
+}
+
+header .hero .wrapper .left-part{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../images/man.jpg);
+}
